@@ -7,8 +7,6 @@ import Home from "./pages/Home";
 import ViewNews from "./pages/ViewNews";
 import NoMatch from "./pages/NoMatch";
 
-// const link = from([new HttpLink({ uri: "http://localhost:4000/graphql" })]);
-
 const client = new ApolloClient({
   uri: process.env.REACT_APP_GRAPHQL_API,
   cache: new InMemoryCache(),
