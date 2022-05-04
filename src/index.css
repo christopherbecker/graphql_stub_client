@@ -49,6 +49,7 @@ button:hover {
 
 *:disabled {
   cursor: default;
+  opacity: 0.3;
 }
 
 .flex {
