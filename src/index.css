@@ -45,6 +45,13 @@ button:hover {
   background: #fff;
   color: #013;
   transition: all 0.25s ease;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+button:disabled:hover {
+  color: #fff;
+  background: none;
+  box-shadow: inset 0 0 0 1px #fff;
 }
 
 *:disabled {
