@@ -33,9 +33,9 @@ const ViewNews = () => {
 
   return (
     <div>
-      {loading && <p>Loading ...</p>}
-      {error && <p>Error! Could not load.</p>}
-      {data && data.singleNews === null && <p>Oops! Nothing to show here.</p>}
+      {loading && <h1>Loading ...</h1>}
+      {error && <h1>Error! Could not load.</h1>}
+      {data && data.singleNews === null && <h1>Oops! Nothing to show here.</h1>}
       {data && data?.singleNews !== null && (
         <div>
           <h1>{data?.singleNews.title}</h1>

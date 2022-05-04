@@ -5,6 +5,7 @@ import "./App.css";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import ViewNews from "./pages/ViewNews";
+import NoMatch from "./pages/NoMatch";
 
 // const link = from([new HttpLink({ uri: "http://localhost:4000/graphql" })]);
 
@@ -20,7 +21,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="view/:id" element={<ViewNews />} />
-          {/* <Route path="*" element={<NoMatch />} /> */}
+          <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
     </ApolloProvider>
